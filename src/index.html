@@ -46,9 +46,9 @@
 
     
 
-    <section class="bg-center bg-no-repeat bg-[url('../img/image (10).jpg')] bg-gray-700 bg-blend-multiply">
+    <section class="bg-center bg-no-repeat bg-[url('../img/image.jpg')]">
         <div class="px-4 mx-auto max-w-screen-xl pt-[0] text-center py-24 lg:py-20">
-            <video class="w-[45%] mx-auto pb-6 rounded-xl" controls>
+            <video class="w-[45%] mx-auto pb-6 rounded-sm" controls>
                 <source src="minibak.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -64,37 +64,25 @@
         </div>
     </section>
 
-     <div class="absolute flex gap-[50px] bg-amber-900 h-[200px] items-center ">
-        <div class="geser">
-            <div class="bulat">
-                <img src="" alt="" class="bocil">
-            </div>
-            <div class="bulat">
-                <img src="" alt="" class="bocil">
-            </div>
-            <div class="bulat">
-                <img src="" alt="" class="bocil">
-            </div>
-            <div class="bulat">
-                <img src="" alt="" class="bocil">
-            </div>
-            <div class="bulat">
-                <img src="" alt="" class="bocil">
-            </div>
-            <div class="bulat">
-                <img src="" alt="" class="bocil">
-            </div>
-            <div class="bulat">
-                <img src="" alt="" class="bocil">
-            </div>
-            <div class="bulat">
-                <img src="" alt="" class="bocil">
-            </div>
-            <div class="bulat">
-                <img src="" alt="" class="bocil">
-            </div>
-        </div>
+    <div class="gerak">
+    <div class="geser">
+        <div class="bulat"><img src="assets/user1.jpg" alt="User" class="bocil"></div>
+        <div class="bulat"><img src="assets/user2.jpg" alt="User" class="bocil"></div>
+        <div class="bulat"><img src="assets/user3.jpg" alt="User" class="bocil"></div>
+        <!-- Duplikasi isi untuk looping -->
+        <div class="bulat"><img src="assets/user1.jpg" alt="User" class="bocil"></div>
+        <div class="bulat"><img src="assets/user2.jpg" alt="User" class="bocil"></div>
+        <div class="bulat"><img src="assets/user3.jpg" alt="User" class="bocil"></div>
+    </div>
+    </div>
 
+
+
+        <div class="flex justify-center items-center min-h-screen">
+            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Default</button>
+            <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Alternative</button>
+            <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Alternative</button>
+        </div>
     <script>
         const navLinks = document.querySelector('.nav-links')
         function onToggleMenu(e){

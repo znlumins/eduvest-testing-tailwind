@@ -2,46 +2,45 @@
 @import "flowbite/src/themes/default";
 
 .gerak {
-    position: absolute;
-    display: flex;
-    gap: 50px;
-    background-color: #383838;
-    height: 200px;
-    align-items: center;
-    top: 225px;
-}
-
-.bulat {
-    display: flex;
-    width: 150px;
-    height: 150px;
-    border: 1px solid #ef6824;
-    background: rgb(239,104,36);
-    background: linear-gradient(218deg, rgba(239,104,36,0.7399334733893557) 0%, rgba(255,255,255,0.28335084033613445) 90%);
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.bocil {
-    width: 75%;
-    height: 75%;
-}
-
-@keyframes slider {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
+  position: relative; /* ubah dari absolute ke relative kalau tidak mau tumpang tindih */
+  display: flex;
+  overflow: hidden;
+  height: 200px;
+  align-items: center;
+  background-color: #383838;
+  justify-content: center;
 }
 
 .geser {
-    white-space: nowarp;
-    display: inline-flex;
-    gap: 50px;
-    animation: 15s slider infinite linear;
+  white-space: nowrap;
+  display: inline-flex;
+  gap: 50px;
+  animation: slider 30s linear infinite;
+}
+
+.bulat {
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid #ef6824;
+  background: linear-gradient(218deg, rgba(239,104,36,0.74), rgba(255,255,255,0.28));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bocil {
+  width: 75%;
+  height: 75%;
+  object-fit: cover;
+}
+
+@keyframes slider {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
